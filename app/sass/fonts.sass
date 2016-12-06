@@ -1,0 +1,15 @@
+=font($alias, $name)
+    @font-face
+        font-family: $alias
+        src: url("../fonts/" + $name + ".eot")
+        src: url("../fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("../fonts/" + $name + ".woff") format("woff"), url("../fonts/" + $name + ".ttf") format("truetype")
+        font-weight: normal
+        font-style: normal
+
++font("Arimo", "Arimo")
++font("Arimo-Bold", "Arimo-Bold")
++font("HelveticaNeueCyr-Roman", "HelveticaNeueCyr-Roman")
++font("Tahoma-Bold", "Tahoma-Bold")
++font("MullerMedium", "MullerMedium")
++font("PFBeauSansPro-Bbook", "PFBeauSansPro-Bbook")
++font("PFBeauSansPro-SemiBold", "PFBeauSansPro-SemiBold")
