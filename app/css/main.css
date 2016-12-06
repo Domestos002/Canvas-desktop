@@ -310,6 +310,12 @@
 
 .b-main-nav__index-wrapper {
   padding-right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .top-slider .b-main-slider__content {
@@ -554,7 +560,7 @@
   .b-content-wrap {
     width: auto;
     max-width: 1160px;
-    padding: 40px 0 30px 0 !important;
+    padding: 40px 10px 30px 10px !important;
   }
 
   .b-what-learn .b-content-wrap, .b-what-view .b-content-wrap, .b-main__blue-bg .b-content-wrap {

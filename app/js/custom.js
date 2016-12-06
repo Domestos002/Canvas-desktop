@@ -18,10 +18,16 @@
         });
 
         $(document).on('click', '.slider-popup-toggle', function (e) {
-            $(".slider-popup-toggle").removeClass("active");
-            $(".slider-popup-toggle").siblings(".slider-popup-content ").addClass("hidden");
-            $(this).toggleClass("active");
-            $(this).siblings(".slider-popup-content ").toggleClass("hidden");
+            if ($(this).hasClass("active")){
+                $(this).removeClass("active");
+                $(this).siblings(".slider-popup-content").addClass("hidden");
+            }
+            else{
+                $(".slider-popup-toggle").removeClass("active");
+                $(".slider-popup-toggle").siblings(".slider-popup-content ").addClass("hidden");
+                $(this).toggleClass("active");
+                $(this).siblings(".slider-popup-content ").toggleClass("hidden");
+            }
         });
 
     });
