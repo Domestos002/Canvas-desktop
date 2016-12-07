@@ -6,8 +6,9 @@ function init() {
         center: [55.82493217555326,36.9955165873718],
         zoom: 12,
         controls: ['zoomControl']
-    });
 
+    });
+    myMap.behaviors.disable('scrollZoom');
     myPlacemark = new ymaps.Placemark([55.82493217555326,36.9955165873718], {
         hintContent: 'Москва!',
         balloonContent: 'Столица России'

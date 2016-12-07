@@ -54,6 +54,55 @@
         .park-banner__close-btn
             background-color: #d52027 * 0.8
 
+.tooltipster-right
+    .tooltipster-arrow
+        +triangle(85, 20, #fff, l)
+
+.tooltipster-left
+    .tooltipster-arrow
+        +triangle(85, 20, #fff, r)
+
+.tooltipster-top
+    .tooltipster-arrow
+        +triangle(85, 20, #fff, b)
+
+.tooltipster-bottom
+    .tooltipster-arrow
+        +triangle(85, 20, #fff, t)
+
+.tooltipster-box
+    border-radius: 0 !important
+
+.tooltipster-box
+    z-index: 100
+
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-right .tooltipster-box
+    margin: 0
+    margin-left: 37px !important
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-left .tooltipster-box
+    margin: 0
+    margin-right: 37px !important
+
+.tooltipster-content
+    font-family: "Arimo"
+    font-size: 14px
+    text-align: center
+    font-weight: 400
+    line-height: 24px
+    color: #231f20 !important
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-left .tooltipster-arrow, .tooltipster-sidetip.tooltipster-shadow.tooltipster-right .tooltipster-arrow
+    margin-top: -10px !important
+
+
+
+
+.main-slider
+    .owl-next, .owl-prev
+        display: block !important
+
 .park-banner__close-btn
     width: 32px
     height: 32px
@@ -126,16 +175,47 @@
 .fw700
     font-weight: 700
 
+.p-rel
+    position: relative
+
+.scale-on-hover
+    &:hover
+        transform: scale(1.05)
+        +trans()
+
 .icon-NB
     +sprite(NB)
     display: inline-block
 
-.base-text
-    color: #231f20
-    &:not(:last-child)
-        margin-bottom: 45px
+.base-text-block
+    p
+        &:not(:last-child)
+            margin-bottom: 45px
+
+.mb0
+    margin-bottom: 0
 
 
+.b-form.demo-park
+    & .b-form-wrap
+        &:before
+            height: 1px
+            content: ''
+            display: block
+            width: 100%
+            opacity: 0.22
+            background-color: #231f20
+            position: absolute
+            top: 0
+            left: 0
+            +transform(translateX(50%))
+
+.demo-park
+    .b-main-nav__item:last-child
+        border-radius: 0 5px 5px 0
+
+    .b-main-nav__item-name
+        font-size: 13px
 
 .b-main__blue-bg
     background: #10a3ff
@@ -177,6 +257,9 @@
 .pt60
     padding-top: 60px
 
+.b-what-learn
+    padding-top: 60px
+
 .b-what-learn, .b-what-view, .b-main__blue-bg
     .b-content-wrap
         width: 1110px
@@ -210,6 +293,11 @@
     margin: 0 auto
 
 .b-content-wrap__variants-item
+    &:hover
+        .img-wrapper
+            transform: scale(1.05)
+            +trans()
+
     text-align: center
     padding-left: 12px
     padding-right: 12px
