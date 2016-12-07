@@ -394,7 +394,7 @@
   padding-left: 12px;
   padding-right: 12px;
 }
-.b-content-wrap__variants-item:hover .img-wrapper {
+.b-content-wrap__variants-item:hover {
   transform: scale(1.05);
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
