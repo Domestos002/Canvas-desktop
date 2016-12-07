@@ -3,12 +3,12 @@ var myMap;
 
 function init() {
     myMap = new ymaps.Map("park-location-map", {
-        center: [55.76, 37.64],
+        center: [55.82493217555326,36.9955165873718],
         zoom: 12,
         controls: ['zoomControl']
     });
 
-    myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+    myPlacemark = new ymaps.Placemark([55.82493217555326,36.9955165873718], {
         hintContent: 'Москва!',
         balloonContent: 'Столица России'
     });
