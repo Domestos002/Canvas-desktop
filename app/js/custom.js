@@ -4,6 +4,7 @@
         loop:true,
         nav:true,
         navigation: true,
+        mouseDrag: false,
         responsive: {
             0: {
                 nav: false,

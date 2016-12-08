@@ -189,8 +189,12 @@
 
 .base-text-block
     p
+        line-height: 28px
+        font-weight: 400
         &:not(:last-child)
             margin-bottom: 45px
+    strong
+        font-weight: 700
 
 .mb0
     margin-bottom: 0
@@ -281,6 +285,8 @@
 
 
 .b-content-wrap__variants-list
+    position: relative
+    top: -60px
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -293,6 +299,7 @@
     margin: 0 auto
 
 .b-content-wrap__variants-item
+    margin-top: 60px
     .img-wrapper
         overflow: hidden
         img

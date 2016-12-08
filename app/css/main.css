@@ -260,8 +260,15 @@
   }
 }
 
+.base-text-block p {
+  line-height: 28px;
+  font-weight: 400;
+}
 .base-text-block p:not(:last-child) {
   margin-bottom: 45px;
+}
+.base-text-block strong {
+  font-weight: 700;
 }
 
 .mb0 {
@@ -377,6 +384,8 @@
 }
 
 .b-content-wrap__variants-list {
+  position: relative;
+  top: -60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -390,6 +399,7 @@
 }
 
 .b-content-wrap__variants-item {
+  margin-top: 60px;
   text-align: center;
   padding-left: 12px;
   padding-right: 12px;
