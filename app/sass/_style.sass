@@ -293,10 +293,15 @@
     margin: 0 auto
 
 .b-content-wrap__variants-item
+    .img-wrapper
+        overflow: hidden
+        img
+            +trans()
     &:hover
         .img-wrapper
-            transform: scale(1.05)
-            +trans()
+            img
+                transform: scale(1.05)
+
 
     text-align: center
     padding-left: 12px
