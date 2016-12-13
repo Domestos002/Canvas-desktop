@@ -5,7 +5,7 @@
             theme: ['tooltipster-shadow', 'tooltipster-shadow-customized'],
             side: "right",
             maxWidth: "196",
-            trigger: 'hover'
+            trigger: 'click'
         });
         $(document).on('click', '.park-banner__close', function (e) {
             $(this).closest(".park-banner").addClass("hidden");
